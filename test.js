@@ -6,8 +6,6 @@ var test = false
 
 
 
-
-
 var t = [1,2,3]
 console.log(typeof(t))
 
