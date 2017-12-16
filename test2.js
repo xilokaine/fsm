@@ -1,19 +1,56 @@
 
 
-load('require.js')
+//load('require.js')
 
-var _ = require('lib3p/lodash.js')
-
-
-
-var t = [1,2,3]
+var _ = require('./lib3p/lodash.js')
 
 
-_.each(t, function(i,a){
-    print(t)
-    print(a)
+//get all the events in the object server.
+function getOS() {
+    var base = new Array()
+
+    base = [
+    {
+            Node : "node2",
+            service: "service2"
+        },
+        {
+            Node : "node5",
+            service: "service1"
+        }
+    ]
+    return base
+}
+
+
+//
+
+var ev = new Object()
+ev.Node = "node1"
+ev.service ="service1"
+
+
+
+
+//
+var os = getOS()
+//receive an event, begin processing.
+
+_.each(os, function(i,d){
+    if (ev.service == i.service){
+        console.log(ev.Node + " Match and have the same service that " + i.service + " for " + i.Node)
+    }
 })
 
 
-//implémentation de lodash ok modification du require ./ dans le Load
-// la case du Load entre impact et rhino.
+
+
+
+
+
+
+
+
+
+
+

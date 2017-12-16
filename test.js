@@ -21,6 +21,8 @@ var myObject = {
      },   
 
 
+
+     
      
      doSomeAsyncCrazyness: function() {
           console.log(this.hasOwnProperty('doSomethingCrazy'))
