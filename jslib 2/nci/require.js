@@ -36,7 +36,8 @@ if (!this.module) {
 			var _exports = module.exports;
 			// var _module = module;
 			module.exports = exports = {};
-			Load(_id);
+			// Load(_id);
+			load(_id);
 			module[_id] = module.exports;
 
 			// Restore the previous exports

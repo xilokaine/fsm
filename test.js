@@ -1,5 +1,10 @@
 ;(function(){
 
+
+  var _ = require('lodash')
+
+  
+
 console.log("We start with bind apply and call method")
 
 var test = false
@@ -36,7 +41,7 @@ var myObject = {
  
     
 
- myObject.doSomeAsyncCrazyness();
+myObject.doSomeAsyncCrazyness();
 console.log(test)
 })()
 console.log("prog ended")
