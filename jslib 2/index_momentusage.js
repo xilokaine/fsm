@@ -11,6 +11,9 @@ var _ = require (path + "/lib3p/lodash.underscore.js")
 var moment = require (path + "/lib3p/moment.js")
 
 
+
+
+
 function ev (name,filter){
     this.name = name 
     this.filter = filter
@@ -29,5 +32,21 @@ function ev (name,filter){
 
 var ev1 = new ev("test")
 
+
+//ev1.setfilter('where node = bla')
+//get date
+var d = moment().format('DD MM YYYY, HH:mm:ss a');
+//get epoch
+var de = moment().unix();
+//
+print (de)
+//convert epoch to date
+print (moment.unix(de).format('DD MM YYYY HH:mm:ss Z'));
+//convert date to epoch
+var epoch = moment('11/11/2018 10:00:00', 'DD/MM/YYYY HH:mm:ss').unix()
+print ("converted epoch " + epoch)
+
+print (d)
+print (de)
 
 }(this));
