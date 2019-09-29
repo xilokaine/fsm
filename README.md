@@ -9,10 +9,7 @@ FSM Light
 
 
 
-
-
-
-````
+```
 const fsm = require('fsm')
 
 
